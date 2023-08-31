@@ -1,0 +1,143 @@
+body {
+    background-image: url('фон.jpg');
+    background-size: cover;
+    background-position: center center;
+	background-attachment: fixed;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.Block_prize{
+    text-decoration: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: 'Marmelad', sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+}
+
+#counter {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-family: 'Marmelad', sans-serif;
+  color: white;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: green;
+  animation: beat 1s infinite;
+  margin: 0 0 0 20px;
+}
+
+
+.whatsapp-icon i {
+  font-size: 70px;
+  color: white;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Prize_Text {
+    width: 600px;
+    color: #111;
+    font-family: ‘Open Sans Condensed’, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 0;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff9f;
+    border-radius: 36px;
+}
+
+
+.social-links {
+          display: flex;
+          justify-content: center;
+          padding: 5px;
+          border-radius: 20px;
+          margin-bottom: 5rem;
+
+    }
+
+.social-links a {
+      display: inline-block;
+      margin: 0 20px;
+      padding: 20px 60px;
+      background-color: #000;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+
+.social-links a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+
+#wheel-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+#wheel {
+        width: 70%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 25px;
+      }
+
+#wheel img {
+        width: 100%;
+        height: auto;
+      }
+
+#spin-button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15%;
+        height: auto;
+        max-width: 100px;
+        z-index: 1;
+        background-image: url("приз.png"); /* путь к изображению кнопки */
+        background-size: contain; /* устанавливаем размер изображения внутри кнопки */
+        background-repeat: no-repeat; /* запрещаем повторять изображение */
+        text-indent: -9999px; /* скрываем текст кнопки за ее пределами */
+        border: none; /* убираем обводку */
+        background-color: transparent; /* убираем фон */
+        cursor: pointer;
+      }
+
+#spin-button img{
+        width: 50%;
+        height: auto;
+      }
